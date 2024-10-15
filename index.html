@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="style">
+    <h1>Tapetų pasaulis</h1>
+  </header>
+
+<div class="container style">
+    <div id="input">
+        <div id="type" class="box">
+            <h3 class="heading">Pasirinkite tapetų rūšį  <i class="bi bi-box-arrow-down-left"></i></h3>
+            <form onclick="type()" onchange="type()">
+                <select name="tapetai" id="tapetai" class="btn">
+                    <option value="popieriniai">Popieriniai tapetai</option>
+                    <option value="naturalus">Natūralūs tapetai</option>
+                </select>
+            </form>
+
+            <div id="vienas" class="slepti">
+                <img src="img/2.jpg" alt="tapetas"  class="foto">  
+                <p>Rulono kaina 5 eur</p>    
+            </div>
+            <div id="du" class="slepti">
+                <img src="img/5.jpg" alt="tapetas"  class="foto"> 
+                <p >Rulono kaina 10 eur</p>   
+            </div>
+                <p id="trys" class="slepti">Pasirinkite tapetų tipą  </p>
+        </div>
+
+        <div id="meassurements" class="box" >
+            <h3 class="heading"> Nurodykite sienos išmatavimus  <i class="bi bi-bounding-box-circles"></i></h3>
+                <div class="wall">
+                    <p>Plotis (cm):</p>
+                    <input type="range" min="1" step="1" max="600" onchange="changex()" id="x-slider">
+                    <input type="number" min="1" step="1" max="600" id="resultx" onchange="xy()"  class="btn">
+                </div>
+
+                <div class="wall">
+                    <p>Aukštis (cm):</p>
+                    <input type="range" min="1" step="1" max="600" onchange="changey()"  id="y-slider">
+                    <input type="number" min="1" step="1" max="600" id="resulty" onchange="xy()" class="btn">
+                </div>
+        </div>
+    </div>
+
+        <div>
+            <button class="btn" onclick="skaiciuoti()">Skaičiuoti</button>
+            <button class="btn" onclick="reload()">Pradėti iš naujo</button>
+        </div>
+    
+ </div>
+
+ <div class="container style">
+
+    <div id="hide" class="box">
+       <a href="#input"><i class="bi bi-journal-arrow-up"></i> <strong>Įveskite duomenis</strong></a> 
+      
+    </div>
+        
+    
+    <div id="rezultatas" class="box">
+        <p><strong>Vienas rulonas yra 50cm pločio ir 180cm aukščio.</strong></p>
+        <h3 class="heading" id="results">Reikalingi rulonai</h3>
+        <h3 class="heading" id="kaina">Kaina</h3>        
+        <a href="/" id="order"><strong><i class="bi bi-bag-heart"></i> Užsakyti</strong></a>
+    </div>
+    </div>
+
+    <footer class="style">
+        <div>
+           <h4>Susisiekime:</h4>        
+             <a href="tel:+3700000000"><i class="bi bi-phone-vibrate"></i> +3700000000</a>
+            <a href="mailto:tapetai@tikiuosineratokiopasto.lt"><i class="bi bi-envelope-paper-heart"></i> tapetai@tapetupasaulissss.lt</a>     
+       
+        </div>
+        
+    </footer>
+</body>
+</html>
+

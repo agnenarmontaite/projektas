@@ -1,0 +1,149 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(219, 225, 232);
+   font-family: 'Raleway', sans-serif;
+   color: rgb(30, 30, 6);
+}
+.style {
+    margin: 15px auto;
+    padding: 20px;
+    width: 80%;
+    border-radius: 15px;
+    text-align: center;
+}
+header {
+    background-image: url('../img/3.jpg');
+    background-size: cover;
+   
+    }
+header h1 {
+    background-color: rgb(219, 225, 232);
+    width: 45%;
+    border-radius: 15px;
+    margin: 5px auto;
+    text-align: center;
+}
+.container {
+    background-image: url('../img/4.jpg');
+    width: 80%;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+   }
+
+#input {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-right: 10px;
+}
+.box {
+    margin: 5px auto;
+    padding: 15px;
+    background-color: rgb(219, 225, 232);
+    width: 50%;
+    border-radius: 15px;
+}
+#type {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.foto {
+    margin: 10px;
+    padding: 0;
+    max-width: 50%;
+    max-height: 50vh;
+    border-radius: 15px;
+}
+#meassurements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 50px;
+    margin-left: 10px;
+} 
+.btn {
+    margin-top: 15px;
+    background-color: rgb(219, 216, 198);
+    border: 1px solid rgb(30, 30, 6);;
+    padding: 5px;
+    border-radius: 5px;
+}
+.btn:hover {
+    cursor: pointer;
+    border: 1px solid orange;
+    box-shadow: 0 0 5px orange;
+   }
+a:hover {
+    cursor: pointer;
+    box-shadow: 0 0 5px orange;
+}
+ .slepti {
+    display: none;
+    text-align: center;
+    text-transform: uppercase;
+ }
+.wall {
+    align-self: baseline;
+    justify-self: center
+ }
+ #toChange {
+    background-color: orange;
+ }
+
+ #hide  {
+    text-align: center;
+}
+#hide a{
+    color: rgb(30, 30, 6);
+    text-decoration: none;  
+    font-size: larger;
+}
+ #rezultatas {
+    display: none;
+    text-decoration: underline;
+    }
+ #rezultatas a {
+    text-decoration: none;
+    color: rgb(30, 30, 6);
+}
+ footer{
+    background-image: url('../img/3.jpg');
+    background-size: cover;
+ }
+
+ footer div {
+    background-color: rgb(219, 225, 232);
+    margin: 0 auto;
+    width: 40%;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
+ h4 {margin: 5px}
+ footer a{
+    color: rgb(30, 30, 6);
+    text-decoration: none;
+    margin: 5px;
+ }
+
+ @media all and (max-width:700px) {
+    #input {
+        flex-direction: column;
+       justify-content: center;
+       align-items: center;
+    }
+    .box {
+        width: 80%;
+    }
+    .foto {
+        max-height: 50vh;
+    }
+    .wall {
+        align-self: center;
+    }
+ }
